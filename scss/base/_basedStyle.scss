@@ -1,0 +1,303 @@
+/*
+  Theme Name: Okabe - HTML5 Web Template
+  Author: 
+  Support: 
+  Description: Okabe - HTML5 Web Template
+  Version: 1.0
+*/
+
+/* CSS Index 
+-----------------------------------
+1. Theme default css
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+*/
+
+
+
+/* ........................................
+---------------------------------------------------
+                              1. Theme default css 
+                            ----------------------------------------------------------------------
+                                              ....................................................*/
+
+//  font style
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap");
+@font-face {
+    font-family: 'HiraMinPro W3';
+    src: url('../../font/HiraMinPro-W3-AlphaNum.woff2') format('woff2'),
+        url('../../font/HiraMinPro-W3-AlphaNum.woff') format('woff'),
+        url('../../font/HiraMinPro-W3-AlphaNum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'HiraginoMin W6';
+    src: url('../../font/HiraginoMin-W6-90msp-RKSJ-H.woff2') format('woff2'),
+        url('../../font/HiraginoMin-W6-90msp-RKSJ-H.woff') format('woff'),
+        url('../../font/HiraginoMin-W6-90msp-RKSJ-H.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'HiraginoMin-Mono W6';
+    src: url('../../font/HiraginoMin-W6-90ms-RKSJ-H.woff2') format('woff2'),
+        url('../../font/HiraginoMin-W6-90ms-RKSJ-H.woff') format('woff'),
+        url('../../font/HiraginoMin-W6-90ms-RKSJ-H.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'HiraMinPro W6';
+    src: url('../../font/HiraMinPro-W6-AlphaNum.woff2') format('woff2'),
+        url('../../font/HiraMinPro-W6-AlphaNum.woff') format('woff'),
+        url('../../font/HiraMinPro-W6-AlphaNum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// @font-face {
+//     font-family: 'DFGGyoSho-W7';
+//     src: url('../../font/DFGyoSho-W7-WING-RKSJ-H.woff2') format('woff2'),
+//         url('../../font/DFGyoSho-W7-WING-RKSJ-H.woff') format('woff'),
+//         url('../../font/DFGyoSho-W7-WING-RKSJ-H.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'DFPGyoSho-W7';
+//     src: url('../../font/DFGyoSho-W7-WINP-RKSJ-H.woff2') format('woff2'),
+//         url('../../font/DFGyoSho-W7-WINP-RKSJ-H.woff') format('woff'),
+//         url('../../font/DFGyoSho-W7-WINP-RKSJ-H.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'DFGyoSho-W7';
+//     src: url('../font/DFGyoSho-W7-WIN-RKSJ-H.woff2') format('woff2'),
+//         url('../font/DFGyoSho-W7-WIN-RKSJ-H.woff') format('woff'),
+//         url('../../font/DFGyoSho-W7-WIN-RKSJ-H.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+
+*{
+	margin:0;
+	padding:0;
+	outline:0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+	font-size: 112.5%;
+}
+@media only screen and (max-width: 834px) {
+
+    body,
+    html {
+        font-size: 100%;
+    }
+}
+ body {
+	overflow-x: hidden;
+    background: #fff;
+    color: #333;
+    // font-family: YakuHanJP, 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', ' Meiryo', sans-serif;
+	font-weight: normal;
+    line-height: normal
+}
+
+.center{
+	text-align: center;
+}
+a:hover {
+    cursor: pointer
+}
+img{vertical-align: middle;}
+.list-inlines{display: inline-block;}
+.f-left {
+	float: left;
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	text-decoration: none;
+}
+.h-100{
+    height: 100%;
+}
+li{
+	list-style: none;
+}
+.RotateLetter {
+	transform: rotate(-90deg);
+	display: inline-block;
+}
+.centerText{text-align: center;}
+.pc{
+    @media (max-width:768px) {
+        display: none;
+    }
+}
+a,
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+	// font-family: YakuHanJP, 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', ' Meiryo', sans-serif;
+
+}
+a,
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #fff;
+	text-decoration: none;
+	// font-family: YakuHanJP, 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', ' Meiryo', sans-serif;
+
+}
+a,
+button {
+	color: #333333;
+	outline: medium none;
+	// font-family: YakuHanJP, 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', ' Meiryo', sans-serif;
+    font-size: 1.6rem;
+
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	// font-family: YakuHanJP, 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', ' Meiryo', sans-serif;
+	font-weight: normal;
+	color: #231F20;
+	margin-top: 0rem;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 4rem;
+	font-weight: 400;
+}
+h2 {
+	font-size: 3.5rem;
+}
+h3 {
+	font-size: 2.8rem;
+}
+h4 {
+	font-size:2.2rem;
+}
+h5 {
+	font-size: 1.7rem;
+
+}
+h6 {
+	font-size: 1.6rem;
+
+}
+ul {
+	margin: 0rem;
+	padding: 0rem;
+}
+li {
+	list-style: none;
+ margin-right: 0rem;
+
+}
+p {
+	font-size: 1.4rem;
+	font-weight: normal;
+	line-height: 2.2rem;
+	color: #333333;
+	margin-bottom: 1.5rem;
+	// font-family: YakuHanJP, 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', ' Meiryo', sans-serif;
+
+}
+
+hr {
+	border-bottom: .1rem solid #EFEFEF;
+	border-top: 0 none;
+  margin: 1.8rem 0 1.7rem;
+	padding: 0;
+}
+label {
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.4rem;
+
+	font-weight: 400
+;
+}
+*::-moz-selection {
+	background: #fff;
+	color: #231F20;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #fff;
+	color: #231F20;
+	text-shadow: none;
+}
+::selection {
+	background: #fff;
+	color: #231F20;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: rgba(51,51,51,.5);
+	font-size: 1.4rem;
+	// font-family: YakuHanJP, 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', ' Meiryo', sans-serif;
+	opacity: 1;
+}
+*::placeholder {
+	color: rgba(51,51,51,.5);
+	font-size: 1.4rem;
+	opacity: 1;
+	// font-family: YakuHanJP, 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', ' Meiryo', sans-serif;
+}
+
+

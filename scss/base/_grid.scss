@@ -1,0 +1,60 @@
+//mixin media query
+@mixin media-breakpoint-up($breakPoint) {
+    
+    @if $breakPoint == maxwindo1iosbook {
+        @media (max-width: 1920px) { @content; }
+    }
+    @else if $breakPoint == maxwindoiosprobook {
+        @media (min-width: 1679px) and (max-width: 1880px) { @content; }
+    }
+    @else if $breakPoint == maxwindo2iosbook {
+        @media (max-width: 1680px) { @content; }
+    }
+    @else if  $breakPoint == maciosbook {
+        @media (max-width: 1440px) { @content; }
+    }
+    @else if $breakPoint == maciosbookproyu {
+        @media (max-width: 1400px) { @content; }
+    }
+   @else if $breakPoint == maciosbookpro {
+        @media (max-width: 1280px) { @content; }
+    }
+    @else if $breakPoint == lg {
+        @media (max-width: 1199px) { @content; }
+    }
+    @else if $breakPoint == lgsquer {
+        @media (max-width: 1199px) { @content; }
+        @media (max-height: 600px) { @content; }
+    }
+    @else if $breakPoint == md {
+        @media (max-width: 991px) { @content; }
+    }
+    @else if $breakPoint == tab_device {
+        @media (max-width: 768px) { @content; }
+    }
+    @else if $breakPoint == sm {
+        @media (max-width: 767px) { @content; }
+    }
+    @else if $breakPoint == lsmios4 {
+        @media (min-width: 450px) and (max-width: 550px) { @content; }
+    }
+    @else if $breakPoint == lsmios3 {
+        @media (min-width: 418px) and (max-width: 475px) { @content; }
+    }
+    @else if $breakPoint == lsmios {
+        @media (min-width: 390px) and (max-width: 417px) { @content; }
+    }
+   
+    @else if $breakPoint == lsmios2 {
+        @media (min-width: 376px) and (max-width: 390px) { @content; }
+    }
+    @else if $breakPoint == lsm {
+        @media (max-width: 375px) { @content; }
+    }
+    @else if $breakPoint == xxsm {
+        @media (max-width: 360px) { @content; }
+    }
+    @else if $breakPoint == xsm {
+        @media (max-width: 320px) { @content; }
+    }
+}

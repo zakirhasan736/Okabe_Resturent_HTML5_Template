@@ -1,0 +1,44 @@
+// font style
+$Text-fontstyled:"Roboto",sans-serif;
+$Text-font-HiraginoMin-Pro: 
+ "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+$Text-font-Hiragino-Sans: 
+ "Hiragino Sans","Hiragino Sans W1","HiraginoSans-W2","Hiragino Sans W4","Hiragino Sans W5","Hiragino Sans W6", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", 游ゴシック, YuGothic, メイリオ, Meiryo, sans-serif;
+;
+$Text-font-Hiragino-Sans1: 
+ -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Hiragino Sans", "Hiragino Sans W1", "Hiragino Sans W2", "Hiragino Sans W4", "Hiragino Sans W5", "Hiragino Sans W6", Arial, "メイリオ", Meiryo, sans-serif;
+;
+$Text-fontstyled3: 'DFPGyoSho-W7',HiraMInPro,YakuHanJP, 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', ' Meiryo', sans-serif;
+
+// Font Weight
+$font-weight-light:300;
+$font-weight-regular:400;
+$font-weight-medium:500;
+$font-weight-semibold:600;
+$font-weight-bold:700;
+$font-weight-extrabold:900;
+
+// Font Styled
+$font-style-normal: normal;
+$font-style-italic: italic;
+
+// Font Size
+$font-size-36: 36px;
+$font-size-40: 40px;
+$font-size-90: 90px;
+$font-size-28up: 28.5px;
+$font-size-8: 8px;
+
+
+// Line height
+$line-height-33UP:33.73px;
+$line-height-70:70px;
+$line-height-85:85px;
+$line-height-57Up:57.8px;
+$line-height-11:11px;
+
+
+// text style
+$text-transform-upper: uppercase;
+$text-transform-captal: capitalize;
+$text-transform-nrml: normal;

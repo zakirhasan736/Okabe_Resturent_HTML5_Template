@@ -1,0 +1,409 @@
+.Contactdetails_section {
+    padding: 120px 0 0;
+    background-image: url('../assests/img/ContactBgImg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-up(maciosbook) {
+        padding-top: 80px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 60px;
+    }
+
+    .section-contentBox .section-textBox {
+        width: 73%;
+        @include media-breakpoint-up(maciosbook) {
+            width: 60%;
+          }
+      
+          @include media-breakpoint-up(maciosbookpro) {
+            width: 58%;
+          }
+      
+          @include media-breakpoint-up(lg) {
+            width: 67%;
+          }
+      
+          @include media-breakpoint-up(md) {
+            width: 80%;
+          }
+      
+          @include media-breakpoint-up(sm) {
+            width: 88%;
+          }
+    }
+
+    .ContactDetails_wrapper {
+        padding: 0 90px;
+
+        @include media-breakpoint-up(maciosbook) {
+            padding: 0 60px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 0 45px;
+        }
+
+        @include media-breakpoint-up(md) {
+            padding: 0 30px;
+        }
+
+        .contactDetails_contBox {
+            margin-top: 72px;
+            margin-bottom: 240px;
+            box-shadow: 0 2px 9px rgba(255, 255, 255, .15);
+
+            @include media-breakpoint-up(maciosbook) {
+                margin-top: 55px;
+                margin-bottom: 180px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin-top: 55px;
+                margin-bottom: 145px;
+            }
+
+            .contactDetails-title {
+                text-align: center;
+                width: 300px;
+                height: auto;
+                border-radius: 10px 10px 0 0;
+                background-color: $primary;
+                display: block;
+                margin: 0 auto;
+                padding: 12px 0 13px;
+                font-size: 30px;
+                line-height: 1;
+                color: $white;
+                font-family: $Text-font-HiraginoMin-Pro;
+
+                @include media-breakpoint-up(maciosbook) {
+                    font-size: 26px;
+                }
+                @include media-breakpoint-up(md) {
+                    font-size: 22px;width: 100%;
+                }
+            }
+
+            .contactDetailsBox {
+                padding: 80px 35px 71px 31px;
+                border-top: 5px solid $primary;
+                background-color: rgba(255, 255, 255, .8);
+                @include media-breakpoint-up(maciosbook) {
+                    padding: 50px 25px 50px 26px;
+                }
+                @include media-breakpoint-up(md) {
+                    padding: 35px 30px 35px 45px;
+                    display: block !important;
+                }
+
+                .contactTypesBoxLeft {
+                    @include media-breakpoint-up(sm) {
+                        display: block !important;
+                    }
+                    .contacttype {
+                        margin-right: 32px;
+                        font-size: 36px;
+                        line-height: 33.73px;
+                        font-weight: 500;
+                        font-family: $Text-font-Hiragino-Sans;
+                        border: 3px solid #b22123;
+                        display: inline-block;
+                        color: #b22123;
+                        height: 60px;
+                        line-height: 60px;
+                        width: 105px;
+                        text-align: center;
+                        border-radius: 10px;
+                        @include media-breakpoint-up(maciosbook) {
+                           font-size: 32px;
+                        }
+                        @include media-breakpoint-up(lg) {
+                            font-size: 22px;
+                            white-space: nowrap;
+                            width: 72px;
+                            height: 48px;
+                            line-height: 46px;
+                            margin-right: 6px;
+                        
+                        }
+                        @include media-breakpoint-up(md) {
+                            font-size: 20px;
+                            width: 75px;
+                            line-height: 38px;
+                            height: 45px;
+                          }
+                        @include media-breakpoint-up(sm) {
+                            text-align: center;
+                            margin-bottom: 7px;
+                            height: 41px;
+                            line-height: 38px;
+                            width: 64px;
+                            font-size: 18px;
+
+                        }
+                    }
+
+                    .contactDetails {
+                        text-align: left;
+
+                        .contactNumber {
+                            @extend %contactNumber;
+                            font-family: $Text-font-HiraginoMin-Pro;
+                            letter-spacing: 1px;
+                            position: relative;
+                            left: -23px;
+                            white-space: nowrap;
+                            @include media-breakpoint-up(maciosbook) {
+                                font-size: 41px;
+                                line-height: 50px;
+                            }
+                            @include media-breakpoint-up(lg) {
+                                left: 0;
+                            }
+                            @include media-breakpoint-up(md) {
+                                font-size: 35px;
+                                line-height: 35px;
+                            }
+                            @include media-breakpoint-up(sm) {
+                              left: 0;
+                              font-size: 28px;
+                              line-height: 35px;
+                            }
+                        }
+
+                        .contactShedule {
+                            @extend %contactShedule;
+                            font-family: $Text-font-Hiragino-Sans;
+                            position: relative;
+                            top: 7px;
+                            left: 12px;
+display: block;
+
+                            @include media-breakpoint-up(maciosbook) {
+                                font-size: 15px;
+                                line-height: 25.73px;
+                            }
+                            @include media-breakpoint-up(md) {
+                                font-size: 13px;
+                                line-height: 21.73px;
+                            }
+                            @include media-breakpoint-up(sm) {
+                                font-size: 10px;
+                                line-height: 21.73px;
+                            }
+                        }
+                    }
+                }
+
+                .middleshape {
+                    @extend %middleshape;
+                    position: relative;
+                    top: -3px;
+            // @include media-breakpoint-up(md) {display: none;}
+
+                }
+
+                .contactTypesBoxRight {
+                    @include media-breakpoint-up(sm) {
+                        display: block !important;
+                    }
+                    .contacttype {
+                        margin-right: 15px;
+                        font-size: 29px;
+                        line-height: 33.73px;
+                        font-weight: 500;
+                        font-family:$Text-font-Hiragino-Sans;
+                        border: 3px solid #b22123;
+                        display: inline-block;
+                        color: #b22123;
+                        height: 60px;
+                        line-height: 55px;
+                        padding: 0 14px 0 4px;
+                        text-align: center;
+                        border-radius: 10px;
+                        letter-spacing: -10px;
+                        @include media-breakpoint-up(maciosbook) {
+                            font-size: 32px;
+                         }
+                        @include media-breakpoint-up(lg) {
+                            font-size: 22px;
+                            white-space: nowrap;
+                            height: 48px;
+                            line-height: 46px;
+                            margin-right: 6px;
+                        }
+                        @include media-breakpoint-up(md) {
+                            font-size: 20px;
+                            line-height: 38px;
+                            height: 45px;
+                          }
+                        @include media-breakpoint-up(sm) {
+                            text-align: center;
+                            margin-bottom: 7px;
+                            font-size: 18px;
+                            height: 40px;
+                            line-height: 35px;
+                           
+                        }
+                    }
+
+                    .contactDetails {
+                        text-align: center;
+       
+                        .contactNumber {
+                            @extend %contactNumber;
+                            font-family: $Text-font-HiraginoMin-Pro;
+                            position: relative;
+                            left: -3px;
+                            white-space: nowrap;
+
+                            @include media-breakpoint-up(maciosbook) {
+                                font-size: 41px;
+                                line-height: 50px;
+                            }
+                            @include media-breakpoint-up(md) {
+                                font-size: 35px;
+                                line-height: 35px;
+                            }
+                            @include media-breakpoint-up(sm) {
+                                font-size: 28px;
+                                line-height: 35px;
+                              }
+                        }
+
+                        .contactShedule {
+                            @extend %contactShedule;
+                            font-family: $Text-font-Hiragino-Sans;
+                            position: relative;
+                            top: 7px;
+                            display: block;
+
+                            @include media-breakpoint-up(maciosbook) {
+                                font-size: 15px;
+                                line-height: 25.73px;
+                            }
+                            @include media-breakpoint-up(md) {
+                                font-size: 10px;
+                                line-height: 21.73px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contactdetailsbox2 {
+        background-color: rgba(255, 255, 255, .8);
+
+        .contactdetails_boxdtlsWrper {
+            padding: 0 90px;
+            @include media-breakpoint-up(maciosbook) {
+                padding: 0 60px;
+            }
+    
+            @include media-breakpoint-up(lg) {
+                padding: 0 45px;
+            }
+    
+            @include media-breakpoint-up(md) {
+                padding: 0 30px;
+            }
+        }
+
+        .contactdetails_boxdtls {
+            padding: 30px 0px 22px 75px;
+
+            @include media-breakpoint-up(maciosbook) {
+                padding-left: 100px;
+            }
+            @include media-breakpoint-up(md) {
+                display: inline-block !important;
+                padding-left: 45px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        .contacttypeboxLeft {
+            font-size: 24px;
+            line-height: 33.73px;
+            font-weight: 300;
+            color: #63372a;
+            font-family: $Text-font-HiraginoMin-Pro;
+            @include media-breakpoint-up(md) {margin-bottom: 15px;}
+            @include media-breakpoint-up(sm) {margin-bottom: 14px;}
+
+        }
+
+        .middleshape {
+            @extend %middleshape;
+            height: 75px;
+            @include media-breakpoint-up(md) {display: none;}
+
+        }
+
+        .contacttypeboxRight {
+            text-align: center;
+            padding-right: 0px;
+            .contacttype {
+                margin-right: 15px;
+                font-size: 20px;
+                line-height: 33.73px;
+                font-weight: 500;
+                font-family: $Text-font-Hiragino-Sans;
+                border: 3px solid #b22123;
+                display: inline-block;
+                color: #b22123;
+                height: 30px;
+                line-height: 25px;
+                width: 60px;
+                text-align: center;
+                border-radius: 6px;
+                @include media-breakpoint-up(md) {
+                width: 50px;
+                font-size: 16px;
+                  
+                }
+            }
+            @include media-breakpoint-up(md) {
+       
+.contactytpesnNumber{
+    justify-content: center
+}
+         
+}
+            .contactNumber {
+                @extend %contactNumber;
+                font-size: 36px;
+                font-family: $Text-font-HiraginoMin-Pro;
+                @include media-breakpoint-up(md) {
+                    font-size: 25px;
+    line-height: 32.73px;
+    white-space: nowrap;
+                }
+            }
+
+            .contactDetailstEXT {
+                @extend %contactShedule;
+                font-size: 16px;
+                line-height: 30px;
+                font-family: $Text-font-Hiragino-Sans;
+
+                @include media-breakpoint-up(maciosbook) {
+                    font-size: 14px;
+                    line-height: 22.73px;
+                }
+                @include media-breakpoint-up(maciosbook) {
+                    font-size: 12px;
+                    line-height: 18.73px;
+                }
+            }
+        }
+
+    }
+}

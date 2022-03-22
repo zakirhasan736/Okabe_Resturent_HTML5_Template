@@ -1,0 +1,315 @@
+.Footer_section {
+    @include media-breakpoint-up(sm) { overflow: hidden; }
+
+    .footerWrapper {
+        .footerTop_section {
+            padding: 115px 90px 0px;
+            @include media-breakpoint-up(maciosbook) { padding: 80px 60px 0; }
+            @include media-breakpoint-up(lg) { padding: 60px 45px 0;}
+            @include media-breakpoint-up(md) { padding: 60px 30px 0;}
+            @include media-breakpoint-up(sm) {
+                overflow: hidden;
+                 }
+            background-image: url('../assests/img/footerbg1.jpg');
+            background-position: top left;
+            background-size: cover;
+            background-repeat: no-repeat;
+            &.partTWO{
+                background-image: url('../assests/img/footerbg2.jpg');
+                padding-bottom: 145px;
+                padding-top: 260px;
+                @include media-breakpoint-up(maciosbookpro) { padding-top: 190px; }
+                @include media-breakpoint-up(md) { padding-top: 60px; }
+
+
+                .footerTop_texBox{
+                    &.partTWO{
+                        .footerTop-Title {
+                            margin-bottom: 20px;
+                            padding-bottom: 26px;
+            @include media-breakpoint-up(md) { font-size: 18px }
+
+                           }
+                    }
+                }
+                
+            }
+            .footerTop_wrapperBox{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 120px;
+                @include media-breakpoint-up(md) {
+                    grid-template-columns: repeat(1, 1fr);
+               grid-row-gap: 60px;
+               grid-column-gap: 0px;
+                    }
+                    @include media-breakpoint-up(sm) {
+                       display: block;
+                        }
+            }
+           
+            .footerTop__contentLeft {
+                .footerTop_texBox {
+                    &.contentLeft{
+                        .footerTop-Title {
+                            padding-bottom: 27px;
+
+                        }
+                    }
+                    .footerTop-Title {
+                        @extend %footerTop-Title;
+                        font-family: $Text-font-HiraginoMin-Pro;
+            @include media-breakpoint-up(maciosbookpro) { font-size: 24px }
+                  
+                    }
+
+                    .TitleDesc {
+                        @extend %TitleDesc;
+                        font-family: $Text-font-Hiragino-Sans;
+            @include media-breakpoint-up(maciosbookpro) { font-size: 14px }
+
+                        .textColor1{
+                            display: block;
+                            color: #ff916a;
+                            font-family: $Text-font-Hiragino-Sans;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .textBox-innerPoint {
+                        &.N-OverlyDown{
+                            position: absolute;
+                            top: auto;
+                            bottom: -178px;
+                            left: -7px;
+            @include media-breakpoint-up(md) { position: relative; bottom: 0 ;left: 0;}
+
+                        }
+                        margin-bottom: 35px;
+                        ul.innerTextList.Bankcard {
+                            position: relative;
+                            top: 13px;
+                            left: -5px;
+                        }
+                        p.textInnerDesc.Bankcard {
+                            letter-spacing: 1.7px;
+                        }
+                        .footerInner-TextTitle {
+                            @extend %footerInner-TextTitle;
+                            font-family: $Text-font-HiraginoMin-Pro;
+                            margin-bottom: 0;
+            @include media-breakpoint-up(maciosbookpro) { font-size: 20px }
+
+                        }
+
+                        .textInnerDesc {
+                            @extend %textInnerDesc;
+                            font-family: $Text-font-Hiragino-Sans;
+                            margin-bottom: 0;
+                            &.Bankcard{margin-bottom: 15px;}
+                            @include media-breakpoint-up(maciosbookpro) { 
+                                font-size: 15px;
+                                }
+                        }
+
+                        .innerTextList {
+                            &.Bankcard{
+                                li{
+                                    display: inline-block;
+                                    border-radius: 7px;
+                                    overflow: hidden;
+                                    margin-left: 7px;
+                                }
+                            }
+                            .innertext-ListItem {
+                                @extend %textInnerDesc;
+                                font-family: $Text-font-Hiragino-Sans;
+                                @include media-breakpoint-up(maciosbook) { 
+                                    font-size: 15px;
+                                    }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footerTop__contentRight {
+                position: relative;
+                .footerTop_texBox {
+                    &.contentRight{
+                        .footerTop-Title {
+                            padding-bottom: 27px;
+                        }
+                    }
+                    &.N-OverlyDown{
+                        position: absolute;
+                        top: auto;
+                        bottom: -146px;
+                        left: 0;
+                        .footerInner-TextTitle{margin-bottom: 30px !important;}
+                        @include media-breakpoint-up(lg) { bottom: -100px;}
+                        @include media-breakpoint-up(md) { position: relative; bottom: 0 ;left: 0;}
+
+                    }
+                    &.contentRight{
+                        .footerTop-Title {
+                            margin-bottom: 27px;
+                        }
+                    }
+                    .footerTop-Title {
+                      @extend %footerTop-Title;
+                        font-family: $Text-font-HiraginoMin-Pro;
+            @include media-breakpoint-up(maciosbookpro) { font-size: 24px }
+                        
+                    }
+                    .TitleDesc {
+                        @extend %TitleDesc;
+                        font-family: $Text-font-Hiragino-Sans;
+            @include media-breakpoint-up(maciosbookpro) { 
+                font-size: 14px;
+                 .pc{display:none !important;}
+                }
+
+                        .textColor1{
+                            display: block;
+                            color: #ff916a;
+                            font-family: $Text-font-Hiragino-Sans;
+                        }
+                    }
+
+                    .textBox-innerPoint {
+                        margin-bottom: 40px;
+                        .footerInner-TextTitle {
+                            @extend %footerInner-TextTitle;
+                            font-family: $Text-font-HiraginoMin-Pro;
+                            margin-bottom: 40px;
+            @include media-breakpoint-up(maciosbook) { font-size: 20px }
+            @include media-breakpoint-up(maciosbookpro) { margin-bottom:18px ; }
+            @include media-breakpoint-up(lg) { margin-bottom:40px ; }
+
+     
+                        }
+                        .graphModel{
+                            @include media-breakpoint-up(maciosbook) {
+                                img{
+                                    width: 100%;
+                                }
+                             }
+                             @include media-breakpoint-up(md) {
+                                 width: 70%;
+                                img{
+                                    width: 100%;
+                                }
+                             }
+                             @include media-breakpoint-up(md) {
+                                width: 90%;
+                               img{
+                                   width: 100%;
+                               }
+                            }
+                
+                            }
+                        .textInnerDesc {
+                            @extend %textInnerDesc;
+                             font-family: $Text-font-Hiragino-Sans;
+                             @include media-breakpoint-up(maciosbookpro) { 
+                                font-size: 15px;
+                                }
+                        }
+
+                        .innerTextList {
+                            .innertext-ListItem {
+                                @extend %innertext-ListItem;
+                                 font-family: $Text-font-Hiragino-Sans;
+                                 @include media-breakpoint-up(maciosbook) { 
+                                    font-size: 14px;
+                                    }
+                                 span{display: block;}
+                                 .textColor1{
+                                    display: block;
+                                    color: #ff916a;
+                                    @extend %innertext-ListItem;
+                                    font-size: 16px;
+                                    font-family: $Text-font-Hiragino-Sans;
+                                }
+                            }
+                        }
+                    }
+                }
+                .contactDetails-Table{
+                    margin-bottom: 22px;
+                    table{
+                        tr {
+                            td{
+                                @extend %innertext-ListItem;
+                                font-family: $Text-font-Hiragino-Sans;
+                                @include media-breakpoint-up(maciosbook) {
+                                    &:nth-of-type(1){
+                                        letter-spacing: 2px;
+                                        width: 130px;
+                                    }
+                                    font-size: 14px; }
+                                    @include media-breakpoint-up(sm) {
+                                        &:nth-of-type(1){
+                                            letter-spacing: 2px;
+                                            width: 130px;display: block;
+                                        }
+                                        font-size: 10px;}
+
+                                &:nth-of-type(2){
+                                    letter-spacing: 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .footerContent-Box {
+            padding: 35px 0px 40px;
+            text-align: center;
+
+            .footerBrand {
+                margin-bottom: 15px;
+                display: block;
+                @include media-breakpoint-up(md) {
+                width: 120px;
+                margin: 0 auto;
+            img{width: 100%;}
+            }
+
+
+            }
+
+            .footerNav-Link {
+
+                
+                .footer-navItem {
+                    display: inline-block;
+
+                    a {
+                        font-size: 14px;
+                        line-height: 36px;
+                        font-weight: 300;
+                        color: #280d05;
+                        font-family: $Text-font-Hiragino-Sans;
+                        @include media-breakpoint-up(sm) {font-size: 12px;}
+                    }
+                }
+            }
+
+            .copyrightText {
+                margin: 0;
+                font-size: 14px;
+                line-height: 36px;
+                font-weight: 300;
+                color: #280d05;
+                font-family: $Text-font-Hiragino-Sans;
+                letter-spacing: 1.7px;
+                @include media-breakpoint-up(sm) {font-size: 12px;}
+            }
+        }
+    }
+}

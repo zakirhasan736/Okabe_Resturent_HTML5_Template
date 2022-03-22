@@ -1,0 +1,122 @@
+.AboutTwister_section{
+  
+    .AboutTwister_wrapperbox{
+        .aboutTwister_TextWrapper{
+            padding-top: 230px;
+            height: 990px;
+            background-image: url('../assests/img/twisterM-bgImg1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            @include media-breakpoint-up(maciosbookpro) {
+                padding-top: 150px;
+                height: 750px;
+            }
+            @include media-breakpoint-up(lg) {
+                padding-top: 120px;
+                height: 650px;
+            }
+            @include media-breakpoint-up(lg) {
+                padding-top: 90px;
+                height: 560px;
+            }
+            .twister-TextBox {
+                position: relative;
+                top: 10px;
+                left: -20px;
+                @include media-breakpoint-up(sm) {
+                    left: 35px;
+                }
+            }
+            .TwisterTitle{
+                font-family: $Text-fontstyled3;
+                margin-bottom: 75px;
+                font-size: 70px;
+                line-height: 60px;
+                font-weight: 700;
+                color: #290d05;
+                @include media-breakpoint-up(maciosbook) {
+                    font-size: 55px;
+                line-height: 60px;
+                margin-bottom: 65px;
+                }
+                @include media-breakpoint-up(maciosbookpro) {
+                    font-size: 45px;
+                line-height: 50px;
+                margin-bottom: 55px;
+                }
+                @include media-breakpoint-up(lg) {
+                    font-size: 35px;
+                    margin-bottom: 13px;
+                }
+                @include media-breakpoint-up(sm) {
+                    font-size: 35px;
+                    margin-bottom: 13px;
+                }
+            }
+            .TwisterDesc{
+                font-size: 28px;
+                line-height: 70px;
+                font-weight: 600;
+                font-family: $Text-font-HiraginoMin-Pro;margin-bottom: 0;
+                span{display: block;}
+                @include media-breakpoint-up(maciosbook) {
+                    font-size: 26px;
+                line-height: 60px;
+                }
+                @include media-breakpoint-up(maciosbookpro) {
+                    font-size: 24px;
+                line-height: 50px;
+                }
+                @include media-breakpoint-up(lg) {
+                    font-size: 20px;
+                line-height: 40px;
+                }
+            }
+        }
+    }
+    .aboutTwister_ModelWrapper{
+        height: 990px;
+        background-image: url('../assests/img/twisterM-bgImg2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @include media-breakpoint-up(maciosbookpro) {
+            height: 750px;
+        }
+        @include media-breakpoint-up(lg) {
+            height: 650px;
+        }
+        @include media-breakpoint-up(md) {
+            height: 460px;
+        }
+            .twisterModelImg {
+                position: absolute;
+                top: -181px;
+                left: 0;
+                @include media-breakpoint-up(maciosbook) {
+                    left: 60px;
+                }
+                @include media-breakpoint-up(maciosbookpro) {
+                   width: 475px;
+                   img{
+                       width: 100%;
+                   }
+                }
+                @include media-breakpoint-up(md) {
+                    width: 400px;
+                    img{
+                        width: 100%;
+                    }
+                 }
+                @include media-breakpoint-up(sm) {
+                    width: 275px;
+                    left: 30px;
+                    top: -141px;
+                    img{
+                        width: 100%;
+                    }
+                 }
+            }
+    }
+}

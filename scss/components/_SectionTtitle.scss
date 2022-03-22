@@ -1,0 +1,132 @@
+.section-contentBox {
+  display: flex;
+  justify-content: center;
+
+  .section-textBox {
+    text-align: center;
+    width: 64%;
+
+    @include media-breakpoint-up(maciosbook) {
+      width: 60%;
+    }
+
+    @include media-breakpoint-up(maciosbookpro) {
+      width: 58%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 67%;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 80%;
+    }
+
+    @include media-breakpoint-up(sm) {
+      width: 88%;
+    }
+
+
+    .section-title {
+      @extend %sectionTilte;
+      margin-bottom: 30px;
+      font-family: $Text-font-HiraginoMin-Pro;
+
+      @include media-breakpoint-up(maciosbook) {
+        font-size: 32px;
+        line-height: 28.73px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+      }
+
+      @include media-breakpoint-up(maciosbookpro) {
+        font-size: 28px;
+        line-height: 26px;
+        padding-top: 23px;
+        padding-bottom: 23px;
+        margin-bottom: 15px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 26px;
+        line-height: 22px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+      }
+
+      @include media-breakpoint-up(md) {
+        font-size: 23px;
+        line-height: 20px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        margin-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      @include media-breakpoint-up(sm) {
+        font-size: 20px;
+        line-height: 25px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      &.patronage {
+        color: #fff;
+        border-color: #fff
+      }
+
+      &.helpCenter {
+        border: 1px solid transparent;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-weight: 300;
+        font-family: $Text-font-HiraginoMin-Pro
+      }
+
+      &.aboutUs {
+        margin-bottom: 0px !important;
+        font-weight: normal;
+        font-family: $Text-fontstyled3;
+        font-size: 60px;
+        line-height: 60px;
+        padding-top: 29px;
+        padding-bottom: 29px;
+        @include media-breakpoint-up(maciosbookpro) {
+          font-size: 43px;
+          line-height: 52px;
+        }
+        @include media-breakpoint-up(lg) {
+          font-size: 38px;
+          line-height: 45px;
+        }
+        @include media-breakpoint-up(md) {
+          font-size: 32px;
+          line-height: 45px;
+        }
+        @include media-breakpoint-up(sm) {
+          font-size: 27px;
+          line-height: 35px;
+        }
+      }
+
+      &.contactDetails {
+        margin-bottom: 0px;
+      }
+    }
+    .section-desc {
+      @extend %sectionSubtitle;
+      font-family: "HiraKakuStdN", serif;
+      font-weight: 600;
+      
+    @include media-breakpoint-up(md) {
+      font-size: 15px;
+      line-height: 19px;
+    }
+    }
+  }
+}

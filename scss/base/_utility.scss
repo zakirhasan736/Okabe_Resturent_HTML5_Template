@@ -1,0 +1,17 @@
+.wrapperBox{
+    max-width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+.innerContainer{
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+.round-deg{
+    transform: rotate(90deg);
+    display: inline-block;
+}

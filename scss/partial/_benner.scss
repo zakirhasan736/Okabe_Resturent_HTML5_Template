@@ -1,0 +1,252 @@
+.benner_section {
+    position: relative;
+    height: 1050px;
+    background-image: url('../assests/img/bennerImgBG.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    overflow: hidden;
+
+    @include media-breakpoint-up(maciosbookpro) {
+        background-position: center;
+
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 100vh;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+            // z-index: 1;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 60px;
+        left: 0;
+        top: auto;
+        bottom: -27px;
+        background-image: url('../assests/img/bennerShape.png');
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 100%;
+        z-index: 999;
+        @include media-breakpoint-up(maciosbook) {
+           bottom: 0;
+        }
+    }
+
+    .benner_wrapperBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+z-index: 99;
+position: relative;
+        @include media-breakpoint-up(maciosbook) {
+            padding-right: 45px;
+        }
+
+        @include media-breakpoint-up(md) {
+            padding-right: 0px;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            position: relative;
+            top: 52%;
+            transform: translateY(-50%);
+            height: auto;
+        }
+
+        .benner-leftTextCont {
+            .bennerTextBox {
+                margin-top: 330px;
+                margin-left: -39px;
+
+                @include media-breakpoint-up(md) {
+                    margin-top: 20px;
+                    margin-left: -105px;
+                    transform: rotate(0deg);
+
+                    .RotateLetter {
+                        transform: rotate(-0deg);
+                        display: inline-block;
+                    }
+                }
+                @include media-breakpoint-up(sm) {
+                    margin-left: 0px;
+                    margin-top: 30px;
+                }
+
+                .desc-text {
+                    font-size: $font-size-36;
+                    color: $white;
+                    line-height: $line-height-70;
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    font-family: $Text-font-HiraginoMin-Pro;
+                    text-shadow: 2px 2px rgb(0, 0, 0,.4);
+                    @include media-breakpoint-up(md) {
+                        font-size: 32px;
+                        line-height: 55px;
+                    }
+                    @include media-breakpoint-up(sm) {
+                        font-size: 28px;
+                        line-height: 35px;
+                    }
+
+                }
+            }
+        }
+
+        .benner-rightTextCont {
+            padding: 30px 30px;
+            border: 1px solid $white;
+            position: relative;
+            left: 134px;
+            top: 55px;
+            background: rgba(0,0,0,0.15);
+            @include media-breakpoint-up(maciosbook) {
+                left: 93px;
+                top: 40px;
+                padding: 20px 30px;
+            }
+
+            @include media-breakpoint-up(maciosbookpro) {
+                padding: 15px 25px;
+                left: 88px;
+                top: -95px;
+
+            }
+
+            @include media-breakpoint-up(md) {
+                left: 0;
+                top: 0;
+                transform: rotate(0deg);
+
+                .RotateLetter {
+                    transform: rotate(-0deg);
+                    display: inline-block;
+                }
+            }
+
+            .bennerTextBox {
+                position: relative;
+                .subtitle {
+                    font-size: 28.5px;
+                    line-height: 90px;
+                    color: #fff;
+                    opacity: .9;
+                    margin: 0;
+                    padding: 0px 40px;
+                    display: block;
+                    text-align: center;
+                    font-family: $Text-font-HiraginoMin-Pro;
+                    border: 1px solid #fff;
+                    border-left: 0;
+                    border-right: 0;
+                    position: absolute;
+                    top: calc(-55% - 1px);
+                    left: calc(-12.5% + 0px);
+                    background-image: url("../assests/img/bennerPinBg.png");
+                    background-position: center;
+                    background-size: cover;
+
+                    @include media-breakpoint-up(maciosbookpro) {
+                        font-size: 24.5px;
+                        line-height: 70px;
+                        padding: 0px 30px;
+                        top: calc(-48% - 1px);
+                    }
+
+                    @include media-breakpoint-up(md) {
+                        font-size: 16.5px;
+                        line-height: 40px;
+                        padding: 0px 30px;
+                        top: calc(-32% - 1px);
+                        left: -10px;
+                    }
+
+                    @include media-breakpoint-up(sm) {
+                        font-size: 13.5px;
+                        line-height: 33px;
+                        padding: 0px 30px;
+                        top: calc(-40% - 1px);
+                        left: -12px;
+                    }
+                }
+
+                .benner-title {
+                    font-size: $font-size-90;
+                    line-height: $line-height-85;
+                    color: $white;
+                    font-weight: normal;
+                    margin: 0;
+                    font-family: 'DFGGyoSho-W7';
+                    letter-spacing: 0px;
+                    
+                    &~.benner-title {
+                        padding-left: 55px;
+                        display: block;
+                    }
+
+                    @include media-breakpoint-up(maciosbook) {
+                        font-size: 75px;
+                    }
+
+                    @include media-breakpoint-up(maciosbookpro) {
+                        font-size: 55px;
+                        line-height: 65px;
+                    }
+
+                    @include media-breakpoint-up(sm) {
+                        font-size: 32px;
+                        line-height: 45px;
+                    }
+                    &.bTwo{
+                        b:nth-child(5),
+                        b:nth-child(6){
+                      margin-left: 16px;
+                        }
+                    }
+                   
+                }
+            }
+        }
+
+    }
+
+    .pinText-mark {
+        position: absolute;
+        top: auto;
+        bottom: 65px;
+        left: -40px;
+
+        @include media-breakpoint-up(maciosbook) {
+            left: 40px;
+        }
+
+        @include media-breakpoint-up(md) {
+            width: 50px;
+
+            img {
+                width: 100%;
+            }
+            z-index: 99;
+        }
+        @include media-breakpoint-up(sm) {
+            width: 37px;
+            bottom: 45px;
+        }
+
+    }
+}

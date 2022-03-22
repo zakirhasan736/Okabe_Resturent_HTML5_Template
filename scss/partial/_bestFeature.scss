@@ -1,0 +1,308 @@
+.feature-section {
+    background-image: url('../assests/img/featurebBgImg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 90px 0 180px;
+
+    @include media-breakpoint-up(maciosbook) {
+        padding: 55px 0 115px;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 90px;
+    }
+    .feature-wrapperbox {
+        .featureCard_contentBox {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 60px;
+            padding-left: 90px;
+            padding-right: 90px;
+            margin-top: 61px;
+
+            @include media-breakpoint-up(maciosbook) {
+                padding-left: 60px;
+                padding-right: 60px;
+                grid-column-gap: 45px;
+            }
+            @include media-breakpoint-up(maciosbookpro) {
+                grid-column-gap: 35px;
+
+            }
+
+            @include media-breakpoint-up(md) {
+                grid-template-columns: repeat(1, 1fr);
+                grid-row-gap: 60px;
+                grid-column-gap: 0px;
+            }
+            @include media-breakpoint-up(sm) {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .CardBox {
+                position: relative;
+                padding: 43px 60px 30px 60px;
+                border: 15px solid $primary;
+                background-color: $white;
+
+                @include media-breakpoint-up(maciosbook) {
+                    padding: 35px 45px 30px 45px;
+                }
+                @include media-breakpoint-up(md) {
+                    border-width: 8px;
+                    padding: 25px 20px 20px 20px;
+                }
+                .card-pintext {
+                    position: absolute;
+                    top: -17%;
+                    left: auto;
+                    right: -13%;
+
+                    @include media-breakpoint-up(maciosbook) {
+                        top: -9%;
+                        right: -8%;
+                        img {
+                            width: 120px;
+                        }
+                    }
+                    @include media-breakpoint-up(md) {
+                        top: -9%;
+                        right: -8%;
+
+                        img {
+                            width: 90px;
+                        }
+                    }
+                    @include media-breakpoint-up(sm) {
+
+                        img {
+                            width: 70px;
+                        }
+                    }
+                }
+
+                .card-titleBox {
+                    text-align: center;
+                    padding: 0 0px;
+
+                    .card_title {
+                        @extend %cardTitle;
+                        font-family: $Text-font-HiraginoMin-Pro;
+                        font-weight: 300;
+
+                        .number {
+                            @extend %cardTitleNumber;
+                            font-family: $Text-font-HiraginoMin-Pro;
+                            font-weight: 300;
+
+                            @include media-breakpoint-up(maciosbookpro) {
+                                font-size: 65.73px;
+                                line-height: 58.21px;
+                            }
+                            @include media-breakpoint-up(lg) {
+                                font-size: 55.73px;
+                                line-height: 58.21px;
+                            }
+                            @include media-breakpoint-up(md) {
+                                font-size: 45.73px;
+                                line-height: 50.21px;
+                            }
+                            @include media-breakpoint-up(md) {
+                                font-size: 35.73px;
+                                line-height: 40.21px;
+                            }
+                        }
+
+                        @include media-breakpoint-up(maciosbookpro) {
+                            font-size: 30px;
+                            line-height: 28.73px;
+                        }
+                        @include media-breakpoint-up(lg) {
+                            font-size: 24px;
+                            line-height: 26.73px;
+                        }
+                        @include media-breakpoint-up(lg) {
+                            font-size: 19px;
+                            line-height: 24.73px;
+                        }
+                    }
+
+                    .card_Subtitle {
+                        @extend %cardSubTitle;
+                        border: 1px solid $primary;
+                        margin-top: 10px;
+                        margin-bottom: 15px;
+                        padding: 5px;
+
+                        @include media-breakpoint-up(maciosbookpro) {
+                            font-size: 24px;
+                            line-height: 28.73px;
+                        }
+                        @include media-breakpoint-up(lg) {
+                            font-size: 20px;
+                            line-height: 26.73px;
+                            margin-bottom: 10px;
+                        }
+                        @include media-breakpoint-up(md) {
+                            font-size: 18px;
+                            line-height: 22.73px;
+                        }
+                    }
+
+                    .card-desc {
+                        @extend %card-desc;
+                        margin-bottom: 23px;
+
+                        @include media-breakpoint-up(maciosbookpro) {
+                            font-size: 26px;
+                            line-height: 28.73px;
+                        }
+                        @include media-breakpoint-up(lg) {
+                            font-size: 17px;
+                            line-height: 20.73px;
+                        }
+                        @include media-breakpoint-up(md) {
+                            font-size: 15px;
+                            line-height: 20.73px;
+                        }
+                 
+                        span {
+                            @extend %descPin;
+                            @include media-breakpoint-up(md) {
+                                font-size: 16px;
+                                line-height: 20.73px;
+                            }
+                            @include media-breakpoint-up(sm) {
+                                font-size: 14px;
+                                line-height: 20.73px;
+                            }
+                        }
+                    }
+                }
+
+                .cardImg-Box {
+                    text-align: center;
+                    @include media-breakpoint-up(maciosbookpro) {
+                        position: relative;
+                    }
+
+                    @include media-breakpoint-up(maciosbook) {
+                        img.modelImg {
+                            width: 80%;
+                        }
+                    }
+                    @include media-breakpoint-up(md) {
+                        img.modelImg {
+                            width: 70%;
+                        }
+                    }
+                    @include media-breakpoint-up(sm) {
+                        img.modelImg {
+                            width: 90%;
+                        }
+                    }
+
+                    &.offer {
+                        text-align: left;
+
+                        @include media-breakpoint-up(maciosbook) {
+                            img.modelImg {
+                                width: 75%;
+                            }
+                        }
+
+                        .modelImg {
+                            padding: 0 0 0 20px;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    &.offerNon {
+                        padding-top: 48px;
+                        @include media-breakpoint-up(sm) {padding-top: 20px;}
+                    }
+
+                    .modelImg {
+                        padding: 0;
+                        vertical-align: middle;
+                    }
+
+                    .offerPlusImg {
+                        position: absolute;
+                        left: auto;
+                        top: auto;
+                        bottom: calc(42% + 4px);
+                        right: 14%;
+
+                        @include media-breakpoint-up(maciosbook) {
+                            right: 16%;
+                        }
+                        @include media-breakpoint-up(maciosbookpro) {
+                            right: 8%;
+                        }
+                        @include media-breakpoint-up(lg) {
+                            width: 40px;
+                        }
+                        @include media-breakpoint-up(md) {
+                            right: 14%;
+                        }
+                        @include media-breakpoint-up(sm) {
+                            width: 25px;
+                        }
+                    }
+
+                    .offerImg {
+                        position: absolute;
+                        left: auto;
+                        right: -82px;
+
+                        @include media-breakpoint-up(maciosbook) {
+                            right: -60px;
+                            width: 120px;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        @include media-breakpoint-up(maciosbookpro) {
+                            right: -93px;
+                            width: 90px;
+                            top: 20px;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        @include media-breakpoint-up(lg) {
+                            top: 0px;
+                        }
+                        @include media-breakpoint-up(md) {
+                            width: 110px;
+                            top: 35px;
+                            right: -60px;
+                        }
+                        @include media-breakpoint-up(sm) {
+                            width: 58px;
+top: 3px;
+right: -49px;
+                        }
+                    }
+                }
+
+                .cardBtn-Box {
+                    .cards-btn {
+                        margin-top: 50px;
+
+                    }
+
+                    &.offer {
+                        .cards-btn {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

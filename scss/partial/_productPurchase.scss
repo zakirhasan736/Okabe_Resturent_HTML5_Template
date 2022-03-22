@@ -1,0 +1,730 @@
+.purchase_section {
+    padding: 111px 0 90px;
+    border: 15px solid #a37a45;
+
+    @include media-breakpoint-up(maciosbook) {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 60px;
+        padding-bottom: 65px;
+    }
+
+    overflow: hidden;
+
+    .purchaseCont_wrapperBox {
+        margin-top: 60px;
+
+        .purchaseForm_wrapper {
+            padding: 0px 0px 0px 70px;
+            background-color: #f7f0e8;
+            display: flex;
+
+            @include media-breakpoint-up(maciosbook) {
+                padding-left: 35px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                display: block;
+                padding: 0 30px;
+            }
+
+            @include media-breakpoint-up(md) {
+                padding: 0 15px;
+            }
+
+            .purchaseInforBox {
+                position: relative;
+                padding-top: 70px;
+
+                .purchaseFormTitle {
+                    font-size: 30px;
+                    line-height: 44px;
+                    font-weight: 300;
+                    margin-bottom: 0;
+                    color: #270d05;
+                    font-family: $Text-font-Hiragino-Sans;
+
+                    @include media-breakpoint-up(maciosbook) {
+                        font-size: 24px;
+                    }
+
+                    @include media-breakpoint-up(maciosbookpro) {
+                        font-size: 20px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+
+                    .colorText {
+                        color: #b22123;
+                        font-weight: 600;
+                    }
+
+                }
+
+                .angleIcons {
+                    position: absolute;
+                    top: auto;
+                    bottom: 30%;
+                    left: auto;
+                    right: -35px;
+                    z-index: 2;
+
+                    @include media-breakpoint-up(lg) {
+                        right: auto;
+                        left: 50px;
+                        bottom: -34px;
+                        transform: rotate(90deg);
+                    }
+
+                    @include media-breakpoint-up(md) {
+                        bottom: -55px;
+                    }
+
+                    @include media-breakpoint-up(sm) {
+                        width: 25px;
+                        bottom: auto;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                }
+
+                .purchaseFormDesc {
+                    margin-top: 33px;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 26px;
+                    color: #270d05;
+                    font-family: $Text-font-Hiragino-Sans;
+
+                    @include media-breakpoint-up(maciosbook) {
+                        font-size: 14px;
+                    }
+
+                    @include media-breakpoint-up(maciosbookpro) {
+                        font-size: 10px;
+                        margin-top: 25px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        font-size: 16px;
+                    }
+
+                    @include media-breakpoint-up(md) {
+                        font-size: 14px;
+                    }
+
+                    span {
+                        display: block;
+                    }
+                }
+            }
+
+            .purchaseInforBoxForm {
+                padding-left: 20px;
+                position: relative;
+
+                @include media-breakpoint-up(sm) {
+                    .purchageFormbg {
+                        width: 100%;
+                    }
+
+                }
+
+                .inputForm {
+                    position: absolute;
+                    top: 40%;
+                    left: 72px;
+
+                    @include media-breakpoint-up(maciosbookpro) {
+                        top: 52%;
+                        left: 52px;
+                    }
+                    @include media-breakpoint-up(sm) {
+                        top: 52%;
+                        left: 39px;
+                    }
+
+
+                    .inputFild {
+                        border: none;
+                        background-color: transparent;
+                        padding: 5px 5px 5px 10px;
+                        width: 490px;
+                        display: block;
+                        transition: all .5s ease;
+
+                        @include media-breakpoint-up(sm) {
+                            width: 218px;
+                        }
+
+                        &:focus {
+                            transition: all .5s ease;
+                            background-color: #fff;
+                        }
+                    }
+
+                    .formIndicator {
+                        font-size: 18px;
+                        line-height: 33.73px;
+                        color: #b22123;
+                        font-family: $Text-font-Hiragino-Sans;
+                        font-weight: 600;
+                        margin-top: 35px;
+                        display: block;
+
+                        @include media-breakpoint-up(maciosbookpro) {
+                            margin-top: 20px;
+                            font-size: 15px;
+                        }
+
+                        @include media-breakpoint-up(lg) {
+                            margin-top: 10px;
+                        }
+
+                        @include media-breakpoint-up(sm) {
+                            font-size: 9px;
+                            margin-top: -17px;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .nessesary_DetailsBox {
+            padding: 45px 90px 40px;
+            border-bottom: 5px solid #f3eee9;
+
+            @include media-breakpoint-up(maciosbookpro) {
+                padding: 45px 60px 40px;
+
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding: 45px 45px 40px;
+
+            }
+
+            @include media-breakpoint-up(md) {
+                padding: 45px 30px 40px;
+
+            }
+
+            .nessesary_InfoWrapper {
+                display: flex;
+                align-items: center;
+
+                @include media-breakpoint-up(md) {
+                    display: block;
+                }
+
+                .nessesaryInfo_warningIcon {
+                    position: relative;
+                    margin-right: 50px;
+
+                    @include media-breakpoint-up(maciosbookpro) {
+                        margin-right: 35px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        margin-right: 25px;
+                    }
+
+                    @include media-breakpoint-up(md) {
+                        text-align: center;
+                        margin-right: 0;
+                        margin-bottom: 30px;
+                    }
+
+                    .alartIconText {
+                        text-align: center;
+                        position: absolute;
+                        top: 32%;
+                        margin: 0 auto;
+                        display: block;
+                        width: 100%;
+
+                        h6 {
+                            font-size: 30px;
+                            line-height: 44px;
+                            font-weight: 600;
+                            color: #b22123;
+                            font-family: $Text-font-Hiragino-Sans;
+                            margin-bottom: 0;
+
+                            @include media-breakpoint-up(maciosbookpro) {
+                                font-size: 25px;
+                            }
+
+                        }
+
+                        span {
+                            font-size: 14px;
+                            line-height: 44px;
+                            font-weight: 600;
+                            color: #b22123;
+                            font-family: $Text-font-Hiragino-Sans;
+                            border: 1px solid #b22123;
+                            padding: 5px 28px;
+
+                            @include media-breakpoint-up(maciosbookpro) {
+                                font-size: 12px;
+                            }
+
+                        }
+                    }
+                }
+
+                .nessesaryInfo_warningText {
+                    padding-left: 40px;
+                    font-size: 18px;
+                    line-height: 36px;
+                    font-weight: 300;
+                    color: #280d05;
+                    font-family: $Text-font-Hiragino-Sans;
+
+                    @include media-breakpoint-up(maciosbookpro) {
+                        font-size: 15px;
+                        padding-left: 25px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        font-size: 12px;
+                        padding-left: 15px;
+                    }
+
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .products_selectItemDetailsBOx {
+
+            .productInfo__wrapperBox {
+                .productsItems__detailsView-BOx {
+                    display: flex;
+                    padding: 115px 90px 65px;
+                    border-bottom: 5px solid #f3eee9;
+
+                    @include media-breakpoint-up(maciosbookpro) {
+                        padding: 60px 60px 45px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        padding: 60px 45px 45px;
+                    }
+
+                    @include media-breakpoint-up(md) {
+                        padding: 60px 30px 45px;
+                    }
+
+                    ~.productsItems__detailsView-BOx {
+                        padding: 60px 90px 65px;
+
+                        @include media-breakpoint-up(maciosbookpro) {
+                            padding: 60px 60px 45px;
+                        }
+
+                        @include media-breakpoint-up(lg) {
+                            padding: 60px 45px 45px;
+                        }
+
+                        @include media-breakpoint-up(md) {
+                            padding: 60px 30px 45px;
+                        }
+                    }
+
+                    @include media-breakpoint-up(md) {
+                        display: block;
+                    }
+
+                    &:nth-child(3) {
+                        .productTitleBox {
+                            padding-bottom: 18px !important;
+                        }
+                    }
+
+                    .selectedProduct__ImgBox {
+                        position: relative;
+
+                        .productOfferPin {
+                            position: absolute;
+                            left: 90px;
+                            top: -27px;
+
+                            @include media-breakpoint-up(lg) {
+                                width: 70px;
+                                left: 50px;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                        }
+
+                        .productBonusPin {
+                            position: absolute;
+                            left: -31px;
+                            top: -25px;
+
+                            @include media-breakpoint-up(lg) {
+                                width: 70px;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        @include media-breakpoint-up(lg) {
+                            width: 40%;
+
+                            .ProductImg {
+                                width: 100%;
+                            }
+                        }
+
+                        @include media-breakpoint-up(md) {
+                            width: 90%;
+                            margin: 0 auto 30px;
+
+                            .ProductImg {
+                                width: 100%;
+                            }
+                        }
+
+                    }
+
+                    .selectedProduct__InfoBox {
+                        margin-left: 60px;
+
+                        @include media-breakpoint-up(maciosbookpro) {
+                            margin-left: 30px;
+                        }
+
+                        @include media-breakpoint-up(md) {
+                            margin-left: 0px;
+                        }
+
+                        .productTitleBox {
+                            text-align: left;
+                            margin-bottom: 17px;
+                            padding-bottom: 10px;
+                            border-bottom: 1px solid #280d05;
+
+                            .productInfo__Subtitle {
+                                font-size: 24px;
+                                line-height: 40px;
+                                font-weight: 300;
+                                font-family: $Text-font-HiraginoMin-Pro;
+                                color: #280d05;
+                                margin-bottom: 0;
+                                position: relative;
+                                top: -3px;
+                                left: -14px;
+
+                                @include media-breakpoint-up(md) {
+                                    font-size: 12px;
+                                    line-height: 32px;
+                                }
+
+                                span {
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    color: #b22123;
+                                    line-height: 40px;
+                                    font-family: $Text-font-Hiragino-Sans;
+
+                                    @include media-breakpoint-up(md) {
+                                        font-size: 9px;
+                                        line-height: 32px;
+                                    }
+                                }
+                            }
+
+                            .productInfo__title {
+                                font-size: 30px;
+                                line-height: 40px;
+                                font-weight: 300;
+                                font-family: $Text-font-HiraginoMin-Pro;
+                                color: #280d05;
+                                margin-bottom: 0;
+                                position: relative;
+                                top: -9px;
+
+                                @include media-breakpoint-up(maciosbook) {
+                                    font-size: 28px;
+                                }
+
+                                @include media-breakpoint-up(maciosbookpro) {
+                                    font-size: 22px;
+                                }
+
+                                @include media-breakpoint-up(md) {
+                                    font-size: 14px;
+                                    line-height: 32px;
+                                }
+
+                            }
+                        }
+
+                        .productPrice {
+                            text-align: right;
+                            font-size: 30px;
+                            line-height: 40px;
+                            font-weight: 600;
+                            font-family: $Text-font-Hiragino-Sans;
+                            color: #280d05;
+                            margin-bottom: 16px;
+
+                            @include media-breakpoint-up(maciosbookpro) {
+                                font-size: 25px;
+                            }
+
+                            span {
+                                font-size: 20px;
+                                line-height: 40px;
+                                font-weight: 300;
+                                font-family: $Text-font-Hiragino-Sans;
+                                color: #280d05;
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        .productRecevedInfo {
+                            background-color: #f7f0e8;
+                            padding: 35px 35px;
+                            margin-bottom: 25px;
+                            display: grid;
+                            grid-template-columns: 224px 54px 1fr;
+
+                            @include media-breakpoint-up(maciosbookpro) {
+                                padding: 25px 20px;
+                                grid-template-columns: 150px 34px 1fr;
+                            }
+
+                            @include media-breakpoint-up(md) {
+                                padding: 25px 20px;
+                            }
+
+                            @include media-breakpoint-up(sm) {
+                                display: block;
+                            }
+
+                            .checkedmarkIcon {
+                                position: relative;
+
+                                @include media-breakpoint-up(maciosbookpro) {
+                                    margin-bottom: 10px;
+                                    display: block;
+                                }
+
+                                @include media-breakpoint-up(lg) {
+                                    img {
+                                        width: 35px;
+                                    }
+                                }
+
+                                @include media-breakpoint-up(md) {
+                                    img {
+                                        width: auto;
+                                    }
+                                }
+
+                                @include media-breakpoint-up(sm) {
+                                    margin-right: 15px;
+                                }
+                            }
+
+                            .checkMarkInfo {
+                                font-size: 16px;
+                                line-height: 26px;
+                                font-weight: 600;
+                                font-family: $Text-font-Hiragino-Sans;
+                                padding-left: 15px;
+                                color: #280d05;
+                                margin-bottom: 0;
+                                position: relative;
+
+                                @include media-breakpoint-up(maciosbookpro) {
+                                    font-size: 10px;
+                                    padding-left: 0;
+                                }
+
+                            }
+
+                            .dividerMark {
+                                width: 2px;
+                                height: 60px;
+                                margin: 0 25px;
+                                background-color: #ded8d0;
+
+                                @include media-breakpoint-up(maciosbookpro) {
+                                    margin-left: 10px;
+                                }
+
+                                @include media-breakpoint-up(sm) {
+                                    width: 100%;
+                                    height: 2px;
+                                    margin: 0 25px;
+                                    display: block;
+                                    margin-bottom: 12px;
+                                    margin-left: 0;
+                                }
+
+                            }
+
+                            .donutmarkIcon {
+                                position: relative;
+
+                                @include media-breakpoint-up(maciosbookpro) {
+                                    margin-bottom: 10px;
+                                    display: block;
+                                }
+
+                                @include media-breakpoint-up(lg) {
+                                    img {
+                                        width: 35px;
+                                    }
+                                }
+
+                                @include media-breakpoint-up(md) {
+                                    img {
+                                        width: auto;
+                                    }
+                                }
+
+                                @include media-breakpoint-up(sm) {
+                                    margin-right: 15px;
+                                }
+                            }
+
+                            .donutMarkInfo {
+                                font-size: 16px;
+                                line-height: 26px;
+                                font-weight: 600;
+                                font-family: $Text-font-Hiragino-Sans;
+                                padding-left: 15px;
+                                color: #b22123;
+                                margin-bottom: 0;
+                                position: relative;
+
+                                @include media-breakpoint-up(maciosbookpro) {
+                                    font-size: 11px;
+                                    padding-left: 0;
+                                }
+
+                            }
+                        }
+
+                        .productInfo__SubmitBox {
+                            display: flex;
+
+                            @include media-breakpoint-up(sm) {
+                                display: block;
+                            }
+
+                            .select__NumberOfProduct {
+                                flex: 0 0 43%;
+                                width: 43%;
+
+                                @include media-breakpoint-up(maciosbookpro) {
+                                    flex: 0 0 48%;
+                                    width: 48%;
+                                }
+
+                                @include media-breakpoint-up(sm) {
+                                    width: 100%;
+                                    margin-bottom: 15px;
+                                }
+
+                                span {
+                                    font-size: 24px;
+                                    line-height: 40px;
+                                    font-weight: 300;
+                                    font-family: $Text-font-Hiragino-Sans;
+                                    color: #280d05;
+                                    margin-bottom: 0;
+
+                                    @include media-breakpoint-up(maciosbookpro) {
+                                        font-size: 18px;
+                                    }
+                                }
+
+                                .inputnumberFild {
+                                    width: 125px;
+                                    padding: 8px;
+
+                                    @include media-breakpoint-up(maciosbookpro) {
+                                        width: 85px;
+                                        padding: 3px;
+                                    }
+                                }
+
+                                .perNumber {
+                                    font-size: 24px;
+                                    line-height: 40px;
+                                    font-weight: 300;
+                                    font-family: $Text-font-Hiragino-Sans;
+                                    color: #280d05;
+                                    margin-bottom: 0;
+                                }
+                            }
+
+                            .produtSubmitBtn {
+                                flex: 1 1;
+
+                                .cartIcon {}
+
+                                .btnText {}
+                            }
+
+                        }
+
+                        .pinText-ReadMore {
+                            font-size: 18px;
+                            line-height: 40px;
+                            color: #280d05;
+                            font-weight: 300;
+                            font-family: $Text-font-Hiragino-Sans;
+                            text-decoration: underline;
+                            text-align: right;
+                            margin-top: 10px;
+                            width: 100%;
+                            display: block;
+                        }
+
+                    }
+
+                }
+
+                .productDetailsBox-endText {
+                    font-size: 20px;
+                    line-height: 40px;
+                    font-weight: 300;
+                    font-family: $Text-font-HiraginoMin-Pro;
+                    color: #280d05;
+                    margin-bottom: 0;
+                    text-align: center;
+                    width: 100%;
+                    display: block;
+                    margin-top: 15px;
+                }
+            }
+        }
+
+
+    }
+}

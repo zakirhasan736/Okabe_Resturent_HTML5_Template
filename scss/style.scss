@@ -1,0 +1,25 @@
+// Bese styled
+@import 'base/basedStyle';
+@import 'base/defauilstyled';
+@import 'base/inheritence';
+@import 'base/fontStyle';
+@import 'base/color';
+@import 'base/utility';
+@import 'base/grid';
+
+// COmponents
+@import 'components/SectionTtitle';
+@import 'components/button';
+
+// Partials styled
+@import 'partial/header';
+@import 'partial/benner';
+@import 'partial/bestFeature';
+@import 'partial/AboutTwister';
+@import 'partial/AboutUs';
+@import 'partial/patronage';
+@import 'partial/productPurchase';
+@import 'partial/contactdetails';
+@import 'partial/insight';
+@import 'partial/helpCenter';
+@import 'partial/footer';
