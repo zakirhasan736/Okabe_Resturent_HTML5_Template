@@ -65,35 +65,16 @@
     font-display: swap;
 }
 
-// @font-face {
-//     font-family: 'DFGGyoSho-W7';
-//     src: url('../../font/DFGyoSho-W7-WING-RKSJ-H.woff2') format('woff2'),
-//         url('../../font/DFGyoSho-W7-WING-RKSJ-H.woff') format('woff'),
-//         url('../../font/DFGyoSho-W7-WING-RKSJ-H.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+    font-family: 'DFGGyoSho-W7';
+    src: url('../../font/DFGyoSho-W7-WING-RKSJ-H.woff2') format('woff2'),
+        url('../../font/DFGyoSho-W7-WING-RKSJ-H.woff') format('woff'),
+        url('../../font/DFGyoSho-W7-WING-RKSJ-H.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
-// @font-face {
-//     font-family: 'DFPGyoSho-W7';
-//     src: url('../../font/DFGyoSho-W7-WINP-RKSJ-H.woff2') format('woff2'),
-//         url('../../font/DFGyoSho-W7-WINP-RKSJ-H.woff') format('woff'),
-//         url('../../font/DFGyoSho-W7-WINP-RKSJ-H.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
-
-// @font-face {
-//     font-family: 'DFGyoSho-W7';
-//     src: url('../font/DFGyoSho-W7-WIN-RKSJ-H.woff2') format('woff2'),
-//         url('../font/DFGyoSho-W7-WIN-RKSJ-H.woff') format('woff'),
-//         url('../../font/DFGyoSho-W7-WIN-RKSJ-H.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
 
 
 *{
